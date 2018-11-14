@@ -1,0 +1,19 @@
+.board {
+    width: 400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    border-radius: 7px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ffaa17, #ff533a);
+    box-shadow: 0 0 15px 0 red;
+}
+.board-header {
+    width: 100%;
+    text-align: center;
+}
+.board-header h2 {
+    line-height: 50px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin: 0;
+}

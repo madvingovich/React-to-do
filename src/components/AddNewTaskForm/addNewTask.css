@@ -1,0 +1,101 @@
+.add-task {
+    position: relative;
+    transition: .3s;
+    padding: 19px 0;
+    height: 70px;
+    top: 0;
+}
+.add-task-active {
+    top: -59px;
+}
+.add-task-disabled {
+    top: 0;
+}
+
+.add-task-wrapper {
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+
+.add-task-btn {
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+}
+.add-task-btn-disabled {
+    /*display: none;*/
+}
+.add-task-btn-active {
+    /*display: block;*/
+}
+
+.inputs {
+    position: relative;
+    padding-right: 45px;
+    display: flex;
+    align-items: center;
+}
+.inputs-wrapper {
+    width: 85%;
+}
+.inputs input {
+    display: block;
+    border: 1px solid transparent;
+    width: 80%;
+    margin: 5px auto;
+    padding: 3px;
+    outline: none;
+    background: rgba(255,255,255,.6);
+}
+.inputs input:focus {
+    border: 1px solid black;
+}
+.inputs button[type=submit] {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #ffffff;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-form {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.close-form:before,
+.close-form:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    transform-origin: 50% 50%;
+}
+.close-form:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-form:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
